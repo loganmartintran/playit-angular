@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular-ui-router": "^0.4.2",
     "hapi": "~7.5.0",
     "path": "^0.4.9"
   },
