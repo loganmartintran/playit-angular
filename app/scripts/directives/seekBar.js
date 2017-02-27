@@ -1,11 +1,6 @@
 (function() {
     function seekBar($document) {
         
-        /*
-        *@function calculatePercent
-        *@desc Calculates the horizonal percent along the seek bar where the event occured
-        */
-        
         var calculatePercent = function(seekBar, event) {
             var offSetX = event.pageX - seekBar.offset().left;
             var seekBarWidth = seekBar.width();
@@ -60,6 +55,6 @@
     }
     
     angular
-        .module('blogJams')
+        .module('blocJams')
         .directive('seekBar', ['document', seekBar]);
 })();
