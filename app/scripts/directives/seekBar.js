@@ -2,7 +2,7 @@
     function seekBar($document) {
         
         var calculatePercent = function(seekBar, event) {
-            var offSetX = event.pageX - seekBar.offset().left;
+            var offsetX = event.pageX - seekBar.offset().left;
             var seekBarWidth = seekBar.width();
             var offsetXPercent = offsetX / seekBarWidth;
             offsetXPercent = Math.max(0, offsetXPercent);
@@ -33,7 +33,7 @@
                 };
                 
                 scope.thumbStyle = function() {
-                    
+                    return {left: percentString()};
                 };
                 
                 scope.onClickSeekBar = function(event) {
